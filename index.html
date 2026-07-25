@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missing You - Shraddha 💕</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        .header p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .inbox {
+            padding: 20px;
+            height: 500px;
+            overflow-y: auto;
+            background: #f8f9fa;
+        }
+
+        .message {
+            margin-bottom: 15px;
+            opacity: 0;
+            animation: slideIn 0.6s ease-out forwards;
+        }
+
+        .message.delay-1 {
+            animation-delay: 0.5s;
+        }
+
+        .message.delay-2 {
+            animation-delay: 1.5s;
+        }
+
+        .message.delay-3 {
+            animation-delay: 2.5s;
+        }
+
+        .message.delay-4 {
+            animation-delay: 3.5s;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .message-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 20px;
+            border-radius: 15px;
+            border-bottom-left-radius: 5px;
+            word-wrap: break-word;
+            max-width: 85%;
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+        }
+
+        .message-box.quote {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 5px;
+            font-style: italic;
+            text-align: center;
+        }
+
+        .message-box p {
+            font-size: 15px;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        .message-box .quote-text {
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .message-box .quote-author {
+            font-size: 12px;
+            opacity: 0.9;
+            margin-top: 8px;
+        }
+
+        .timestamp {
+            font-size: 12px;
+            color: #999;
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+
+        .footer {
+            background: white;
+            padding: 15px 20px;
+            text-align: center;
+            border-top: 1px solid #e0e0e0;
+            color: #999;
+            font-size: 12px;
+        }
+
+        .heart {
+            display: inline-block;
+            color: #f5576c;
+            animation: heartbeat 1.5s infinite;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        .inbox::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .inbox::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        .inbox::-webkit-scrollbar-thumb {
+            background: #667eea;
+            border-radius: 10px;
+        }
+
+        .inbox::-webkit-scrollbar-thumb:hover {
+            background: #764ba2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>💕 For Shraddha 💕</h1>
+            <p>Messages from the heart</p>
+        </div>
+
+        <div class="inbox">
+            <!-- Message 1 -->
+            <div class="message delay-1">
+                <div class="message-box">
+                    <p>Hey Shraddha 👋</p>
+                </div>
+                <div class="timestamp">Just now</div>
+            </div>
+
+            <!-- Message 2 -->
+            <div class="message delay-2">
+                <div class="message-box">
+                    <p>I'm missing you...</p>
+                </div>
+                <div class="timestamp">1 minute ago</div>
+            </div>
+
+            <!-- Message 3 - Love Quotes -->
+            <div class="message delay-3">
+                <div class="message-box quote">
+                    <div class="quote-text">
+                        "In your absence, my heart learns to beat a little slower, and I discover that distance can never measure how much you mean to me."
+                    </div>
+                    <div class="quote-author">— A Heart That Misses You</div>
+                </div>
+                <div class="timestamp">2 minutes ago</div>
+            </div>
+
+            <!-- Message 4 -->
+            <div class="message delay-4">
+                <div class="message-box">
+                    <p>I'm missing you so much <span class="heart">❤️</span></p>
+                </div>
+                <div class="timestamp">3 minutes ago</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Every moment without you feels like forever <span class="heart">❤️</span></p>
+        </div>
+    </div>
+</body>
+</html>
